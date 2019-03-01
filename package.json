@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.1",
+    "tiny-slider": "^2.9.1"
+  }
+}

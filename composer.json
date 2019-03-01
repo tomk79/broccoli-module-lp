@@ -1,0 +1,27 @@
+{
+    "name": "tomk79/broccoli-module-lp",
+    "description": "",
+    "keywords": ["broccoli","pickles2"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tomoya Koyanagi",
+            "email": "tomk79@gmail.com"
+        }
+    ],
+    "repositories": [
+    ],
+	"minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "pickles2/px-fw-2.x": "^2.0",
+        "pickles2/px2-multitheme": "^2.0",
+        "pickles2/px2-px2dthelper": "^2.0"
+    },
+    "autoload": {
+        "files": [
+        ]
+    }
+}
