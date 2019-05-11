@@ -18,10 +18,12 @@
 	"display":"select",
 	"options":[
 		{"value":"", "label":"なし"},
-		{"value":"fixed", "label":"固定"}
+		{"value":"scroll-fixed", "label":"スクロールに対して固定"}
 	],
 	"hidden": true
 }}&}
-<div class="px2-lp-frame" style="{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:#{&{"echo":{"ref":"background-color"}}&};{&"endif"&}">
+<div class="px2-lp-container{&{"if":{"is_set":"background-image-effect"}}&} px2-lp-container--bg-{&{"echo":{"ref":"background-image-effect"}}&}{&"endif"&}" style="{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:{&{"echo":{"ref":"background-color"}}&};{&"endif"&}">
+	<div class="px2-lp-container__inner">
 {&{"module":{"name":"main","label":"メインエリア"}}&}
+	</div>
 </div>

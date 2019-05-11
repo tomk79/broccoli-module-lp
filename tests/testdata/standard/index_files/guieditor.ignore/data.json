@@ -7,14 +7,53 @@
                     {
                         "modId": "pickles2:containers/container",
                         "fields": {
-                            "background-color": "f99",
+                            "background-color": "",
                             "background-image": {
-                                "resKey": "c1b10a28b691516137a3421c422af77e",
-                                "path": "./index_files/resources/photo002-256px.gif",
+                                "resKey": "395f47c16e488cb1e23768692fa86d41",
+                                "path": "./index_files/resources/photo001.jpg",
                                 "resType": "",
                                 "webUrl": ""
                             },
-                            "background-image-effect": "",
+                            "background-image-effect": "scroll-fixed",
+                            "main": [
+                                {
+                                    "modId": "std-document:utils/p",
+                                    "fields": {
+                                        "paragraph": "px2-p",
+                                        "text-align": " px2-text-align-center",
+                                        "main": [
+                                            {
+                                                "modId": "std-document:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "# ランディングページへようこそ\n",
+                                                        "editor": "markdown"
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "pickles2:containers/container",
+                        "fields": {
+                            "background-color": "#f99",
+                            "background-image": {
+                                "resKey": "c1b10a28b691516137a3421c422af77e",
+                                "path": "./index_files/resources/photo002-256px.jpg",
+                                "resType": "",
+                                "webUrl": ""
+                            },
+                            "background-image-effect": "scroll-fixed",
                             "main": [
                                 {
                                     "modId": "std-document:grids/grid",
