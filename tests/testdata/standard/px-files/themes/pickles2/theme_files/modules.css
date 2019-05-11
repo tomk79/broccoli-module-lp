@@ -136,7 +136,7 @@ p, li, dt, dd {
  */
 .theme-layouts {
   background-color: #fff;
-  padding: 18px 15px;
+  padding: 0;
   clear: both;
   margin: 0 auto;
   width: auto; }
@@ -150,7 +150,6 @@ p, li, dt, dd {
     border: 3px solid #930; }
   .theme-layouts__body {
     display: flex;
-    max-width: 1024px;
     margin: 0 auto; }
   .theme-layouts__content {
     width: 100%; }

@@ -5,23 +5,29 @@
             "fields": {
                 "main": [
                     {
-                        "modId": "pickles2:basics/text",
+                        "modId": "pickles2:frames/frame",
                         "fields": {
-                            "main": {
-                                "src": "## 基本モジュール\n\n汎用的なHTMLモジュール環境を提供します。\n\n- <a href=\"#\" class=\"px2-a\">標準的なビュレット付きリンク</a>\n",
-                                "editor": "markdown"
-                            }
-                        },
-                        "anchor": "",
-                        "dec": ""
-                    },
-                    {
-                        "modId": "pickles2:basics/text",
-                        "fields": {
-                            "main": {
-                                "src": "## カラムモジュール\n",
-                                "editor": "markdown"
-                            }
+                            "background-color": "f99",
+                            "background-image": {
+                                "resKey": "a803f6bda556b656a98b703506737d42",
+                                "path": "./index_files/resources/a803f6bda556b656a98b703506737d42.txt",
+                                "resType": "web",
+                                "webUrl": ""
+                            },
+                            "background-image-effect": "",
+                            "main": [
+                                {
+                                    "modId": "pickles2:blocks/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "## テキストフレームです。\n\nテキストを効果的に表現します。\n",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
                         },
                         "anchor": "",
                         "dec": ""
