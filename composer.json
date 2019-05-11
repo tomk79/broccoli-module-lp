@@ -18,7 +18,8 @@
     "require-dev": {
         "pickles2/px-fw-2.x": "^2.0",
         "pickles2/px2-multitheme": "^2.0",
-        "pickles2/px2-px2dthelper": "^2.0"
+        "pickles2/px2-px2dthelper": "^2.0",
+        "tomk79/broccoli-module-std-document": "dev-develop"
     },
     "autoload": {
         "files": [
