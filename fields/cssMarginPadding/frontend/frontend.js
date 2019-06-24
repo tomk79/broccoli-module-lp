@@ -10599,7 +10599,7 @@ return jQuery;
 } );
 
 },{}],2:[function(require,module,exports){
-window.broccoliFieldLpCssMargin = function(broccoli){
+window.broccoliFieldLpCssMarginPadding = function(broccoli){
 	var $ = require('jquery');
 
 	/**
@@ -10612,17 +10612,31 @@ window.broccoliFieldLpCssMargin = function(broccoli){
 		if(!rtn || typeof(rtn) != typeof({})){
 			rtn = {};
 		}
-		if(typeof(rtn.top) != typeof('')){
-			rtn.top = '';
+		// margin
+		if(typeof(rtn.marginTop) != typeof('')){
+			rtn.marginTop = '';
 		}
-		if(typeof(rtn.right) != typeof('')){
-			rtn.right = '';
+		if(typeof(rtn.marginRight) != typeof('')){
+			rtn.marginRight = '';
 		}
-		if(typeof(rtn.bottom) != typeof('')){
-			rtn.bottom = '';
+		if(typeof(rtn.marginBottom) != typeof('')){
+			rtn.marginBottom = '';
 		}
-		if(typeof(rtn.left) != typeof('')){
-			rtn.left = '';
+		if(typeof(rtn.marginLeft) != typeof('')){
+			rtn.marginLeft = '';
+		}
+		// padding
+		if(typeof(rtn.paddingTop) != typeof('')){
+			rtn.paddingTop = '';
+		}
+		if(typeof(rtn.paddingRight) != typeof('')){
+			rtn.paddingRight = '';
+		}
+		if(typeof(rtn.paddingBottom) != typeof('')){
+			rtn.paddingBottom = '';
+		}
+		if(typeof(rtn.paddingLeft) != typeof('')){
+			rtn.paddingLeft = '';
 		}
 		return rtn;
 	}
@@ -10637,10 +10651,15 @@ window.broccoliFieldLpCssMargin = function(broccoli){
 			.then(function(){ return new Promise(function(rlv, rjt){
 				// サーバーサイドの bind() に相当する処理
 				if(typeof(fieldData) == typeof({})){
-					rtn += fieldData.top;
-					rtn += ' '+fieldData.right;
-					rtn += ' '+fieldData.bottom;
-					rtn += ' '+fieldData.left;
+					rtn += fieldData.marginTop;
+					rtn += ' '+fieldData.marginRight;
+					rtn += ' '+fieldData.marginBottom;
+					rtn += ' '+fieldData.marginLeft;
+
+					rtn += ' '+fieldData.paddingTop;
+					rtn += ' '+fieldData.paddingRight;
+					rtn += ' '+fieldData.paddingBottom;
+					rtn += ' '+fieldData.paddingLeft;
 				}else{
 					rtn = 'no data';
 				}
@@ -10661,46 +10680,94 @@ window.broccoliFieldLpCssMargin = function(broccoli){
 		if(!data || typeof(data) != typeof({})){
 			data = {};
 		}
-		if(typeof(data.top) != typeof('')){
-			data.top = '';
+
+		// margin
+		if(typeof(data.marginTop) != typeof('')){
+			data.marginTop = '';
 		}
-		if(typeof(data.right) != typeof('')){
-			data.right = '';
+		if(typeof(data.marginRight) != typeof('')){
+			data.marginRight = '';
 		}
-		if(typeof(data.bottom) != typeof('')){
-			data.bottom = '';
+		if(typeof(data.marginBottom) != typeof('')){
+			data.marginBottom = '';
 		}
-		if(typeof(data.left) != typeof('')){
-			data.left = '';
+		if(typeof(data.marginLeft) != typeof('')){
+			data.marginLeft = '';
 		}
+
+		// padding
+		if(typeof(data.marginTop) != typeof('')){
+			data.marginTop = '';
+		}
+		if(typeof(data.marginRight) != typeof('')){
+			data.marginRight = '';
+		}
+		if(typeof(data.marginBottom) != typeof('')){
+			data.marginBottom = '';
+		}
+		if(typeof(data.marginLeft) != typeof('')){
+			data.marginLeft = '';
+		}
+
 		var $rtn = $('<div>');
 		$rtn
+			// margin
 			.append( $('<input class="form-control">')
 				.attr({
-					"name": mod.name+'__top'
+					"name": mod.name+'__margin-top'
 				})
-				.val(data.top || '')
+				.val(data.marginTop || '')
 				.css({'width':'5em'})
 			)
 			.append( $('<input class="form-control">')
 				.attr({
-					"name": mod.name+'__right'
+					"name": mod.name+'__margin-right'
 				})
-				.val(data.right || '')
+				.val(data.marginRight || '')
 				.css({'width':'5em'})
 			)
 			.append( $('<input class="form-control">')
 				.attr({
-					"name": mod.name+'__bottom'
+					"name": mod.name+'__margin-bottom'
 				})
-				.val(data.bottom || '')
+				.val(data.marginBottom || '')
 				.css({'width':'5em'})
 			)
 			.append( $('<input class="form-control">')
 				.attr({
-					"name": mod.name+'__left'
+					"name": mod.name+'__margin-left'
 				})
-				.val(data.left || '')
+				.val(data.marginLeft || '')
+				.css({'width':'5em'})
+			)
+
+			// padding
+			.append( $('<input class="form-control">')
+				.attr({
+					"name": mod.name+'__padding-top'
+				})
+				.val(data.paddingTop || '')
+				.css({'width':'5em'})
+			)
+			.append( $('<input class="form-control">')
+				.attr({
+					"name": mod.name+'__padding-right'
+				})
+				.val(data.paddingRight || '')
+				.css({'width':'5em'})
+			)
+			.append( $('<input class="form-control">')
+				.attr({
+					"name": mod.name+'__padding-bottom'
+				})
+				.val(data.paddingBottom || '')
+				.css({'width':'5em'})
+			)
+			.append( $('<input class="form-control">')
+				.attr({
+					"name": mod.name+'__padding-left'
+				})
+				.val(data.paddingLeft || '')
 				.css({'width':'5em'})
 			)
 		;
@@ -10732,10 +10799,19 @@ window.broccoliFieldLpCssMargin = function(broccoli){
 		options.message = options.message || function(msg){};//ユーザーへのメッセージテキストを送信
 		var $dom = $(elm);
 		var rtn = {};
-		rtn.top = $dom.find('input[name='+mod.name+'__top]').val();
-		rtn.right = $dom.find('input[name='+mod.name+'__right]').val();
-		rtn.bottom = $dom.find('input[name='+mod.name+'__bottom]').val();
-		rtn.left = $dom.find('input[name='+mod.name+'__left]').val();
+
+		// margin
+		rtn.marginTop = $dom.find('input[name='+mod.name+'__margin-top]').val();
+		rtn.marginRight = $dom.find('input[name='+mod.name+'__margin-right]').val();
+		rtn.marginBottom = $dom.find('input[name='+mod.name+'__margin-bottom]').val();
+		rtn.marginLeft = $dom.find('input[name='+mod.name+'__margin-left]').val();
+
+		// padding
+		rtn.paddingTop = $dom.find('input[name='+mod.name+'__padding-top]').val();
+		rtn.paddingRight = $dom.find('input[name='+mod.name+'__padding-right]').val();
+		rtn.paddingBottom = $dom.find('input[name='+mod.name+'__padding-bottom]').val();
+		rtn.paddingLeft = $dom.find('input[name='+mod.name+'__padding-left]').val();
+
 		rtn = JSON.parse( JSON.stringify(rtn) );
 
 		new Promise(function(rlv){rlv();}).then(function(){ return new Promise(function(rlv, rjt){

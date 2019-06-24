@@ -40,17 +40,15 @@
                                 }
                             ],
                             "min-height": "",
-                            "padding": {
-                                "top": "123px",
-                                "right": "auto",
-                                "bottom": "123px",
-                                "left": "auto"
-                            },
-                            "margin": {
-                                "top": "",
-                                "right": "",
-                                "bottom": "",
-                                "left": ""
+                            "margin-padding": {
+                                "marginTop": "",
+                                "marginRight": "",
+                                "marginBottom": "",
+                                "marginLeft": "",
+                                "paddingTop": "100px",
+                                "paddingRight": "",
+                                "paddingBottom": "",
+                                "paddingLeft": ""
                             }
                         },
                         "anchor": "",
@@ -164,17 +162,15 @@
                                 }
                             ],
                             "min-height": "",
-                            "padding": {
-                                "top": "",
-                                "right": "",
-                                "bottom": "",
-                                "left": ""
-                            },
-                            "margin": {
-                                "top": "",
-                                "right": "",
-                                "bottom": "",
-                                "left": ""
+                            "margin-padding": {
+                                "marginTop": "",
+                                "marginRight": "",
+                                "marginBottom": "",
+                                "marginLeft": "",
+                                "paddingTop": "",
+                                "paddingRight": "",
+                                "paddingBottom": "",
+                                "paddingLeft": ""
                             }
                         },
                         "anchor": "",

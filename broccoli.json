@@ -6,35 +6,19 @@
         "path": "modules/"
     },
     {
-        "id": "css-padding",
-        "name": "Padding",
+        "id": "css-margin-padding",
+        "name": "MarginPadding",
         "type": "field",
         "backend": {
-            "class": "tomk79\\broccoliFieldLp\\fields\\cssPadding",
-            "file": "fields/cssPadding/backend.js"
+            "class": "tomk79\\broccoliFieldLp\\fields\\cssMarginPadding",
+            "file": "fields/cssMarginPadding/backend.js"
         },
         "frontend": {
-            "dir": "fields/cssPadding/frontend/",
+            "dir": "fields/cssMarginPadding/frontend/",
             "file": [
                 "frontend.js"
             ],
-            "function" : "window.broccoliFieldLpCssPadding"
-        }
-    },
-    {
-        "id": "css-margin",
-        "name": "Margin",
-        "type": "field",
-        "backend": {
-            "class": "tomk79\\broccoliFieldLp\\fields\\cssMargin",
-            "file": "fields/cssMargin/backend.js"
-        },
-        "frontend": {
-            "dir": "fields/cssMargin/frontend/",
-            "file": [
-                "frontend.js"
-            ],
-            "function" : "window.broccoliFieldLpCssMargin"
+            "function" : "window.broccoliFieldLpCssMarginPadding"
         }
     }
 ]

@@ -387,30 +387,17 @@ return call_user_func( function(){
 	// $conf->plugins->px2dt->guieditor->path_resource_dir = '{$dirname}/{$filename}_files/resources/';
 
 	@$conf->plugins->px2dt->guieditor->custom_fields = array(
-		'css-margin'=>array(
+		'css-margin-padding'=>array(
 			'backend'=>array(
-				'class' => 'tomk79\\broccoliFieldLp\\fields\\cssMargin',
-				'file' => '../../../fields/cssMargin/backend.js',
+				'class' => 'tomk79\\broccoliFieldLp\\fields\\cssMarginPadding',
+				'file' => '../../../fields/cssMarginPadding/backend.js',
 			),
 			'frontend'=>array(
-				'dir' => '../../../fields/cssMargin/frontend/',
+				'dir' => '../../../fields/cssMarginPadding/frontend/',
 				'file' => array(
 					'frontend.js'
 				),
-				'function' => 'window.broccoliFieldLpCssMargin'
-			),
-		),
-		'css-padding'=>array(
-			'backend'=>array(
-				'class' => 'tomk79\\broccoliFieldLp\\fields\\cssPadding',
-				'file' => '../../../fields/cssPadding/backend.js',
-			),
-			'frontend'=>array(
-				'dir' => '../../../fields/cssPadding/frontend/',
-				'file' => array(
-					'frontend.js'
-				),
-				'function' => 'window.broccoliFieldLpCssPadding'
+				'function' => 'window.broccoliFieldLpCssMarginPadding'
 			),
 		),
 	);

@@ -23,8 +23,7 @@
     },
     "autoload": {
         "files": [
-            "fields/cssMargin/backend.php",
-            "fields/cssPadding/backend.php"
+            "fields/cssMarginPadding/backend.php"
         ]
     }
 }

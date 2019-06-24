@@ -32,22 +32,14 @@
     "hidden":true
 }}&}
 {&{"input":{
-    "type":"css-padding",
-    "name":"padding",
-    "label":"ボックス内の隙間 (padding)",
-    "description":"ボックス内部に空ける隙間の量を指定します。単位まで入力してください。",
-    "hidden":true
-}}&}
-{&{"input":{
-    "type":"css-margin",
-    "name":"margin",
-    "label":"ボックスの外の隙間 (margin)",
-    "description":"ボックスの外向きに空ける隙間の量を指定します。単位まで入力してください。",
+    "type":"css-margin-padding",
+    "name":"margin-padding",
+    "label":"ボックス内、ボックス外の隙間 (margin, padding)",
+    "description":"ボックス内部、および外側に空ける隙間の量を指定します。単位まで入力してください。",
     "hidden":true
 }}&}
 <div class="px2-lp-container{&{"if":{"is_set":"background-image-effect"}}&}{&{"echo":{"ref":"background-image-effect"}}&}{&"endif"&}"
- style="{&{"echo":{"ref":"padding"}}&}
-{&{"echo":{"ref":"margin"}}&}{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:{&{"echo":{"ref":"background-color"}}&};{&"endif"&}{&{"if":{"cond":[["is_set:min-height"]]}}&}
+ style="{&{"echo":{"ref":"margin-padding"}}&}{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:{&{"echo":{"ref":"background-color"}}&};{&"endif"&}{&{"if":{"cond":[["is_set:min-height"]]}}&}
  min-height:{&{"echo":{"ref":"min-height"}}&};{&"endif"&}">
 	<div class="px2-lp-container__inner">
 {&{"module":{"name":"main","label":"メインエリア"}}&}
