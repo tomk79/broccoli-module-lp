@@ -18,11 +18,37 @@
 	"display":"select",
 	"options":[
 		{"value":"", "label":"なし"},
-		{"value":"scroll-fixed", "label":"スクロールに対して固定"}
+		{"value":" px2-lp-container--bg-scroll-fixed", "label":"スクロールに対して固定"}
 	],
 	"hidden": true
 }}&}
-<div class="px2-lp-container{&{"if":{"is_set":"background-image-effect"}}&} px2-lp-container--bg-{&{"echo":{"ref":"background-image-effect"}}&}{&"endif"&}" style="{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:{&{"echo":{"ref":"background-color"}}&};{&"endif"&}">
+{&{"input":{
+    "type":"text",
+    "name":"min-height",
+    "label":"高さ",
+    "default":"auto",
+    "description":"最低限確保する高さを指定します。単位まで入力してください。 (例: 600px)",
+    "rows": 1,
+    "hidden":true
+}}&}
+{&{"input":{
+    "type":"css-padding",
+    "name":"padding",
+    "label":"ボックス内の隙間 (padding)",
+    "description":"ボックス内部に空ける隙間の量を指定します。単位まで入力してください。",
+    "hidden":true
+}}&}
+{&{"input":{
+    "type":"css-margin",
+    "name":"margin",
+    "label":"ボックスの外の隙間 (margin)",
+    "description":"ボックスの外向きに空ける隙間の量を指定します。単位まで入力してください。",
+    "hidden":true
+}}&}
+<div class="px2-lp-container{&{"if":{"is_set":"background-image-effect"}}&}{&{"echo":{"ref":"background-image-effect"}}&}{&"endif"&}"
+ style="{&{"echo":{"ref":"padding"}}&}
+{&{"echo":{"ref":"margin"}}&}{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:{&{"echo":{"ref":"background-color"}}&};{&"endif"&}{&{"if":{"cond":[["is_set:min-height"]]}}&}
+ min-height:{&{"echo":{"ref":"min-height"}}&};{&"endif"&}">
 	<div class="px2-lp-container__inner">
 {&{"module":{"name":"main","label":"メインエリア"}}&}
 	</div>

@@ -386,6 +386,34 @@ return call_user_func( function(){
 	/** GUI編集リソース出力先ディレクトリ */
 	// $conf->plugins->px2dt->guieditor->path_resource_dir = '{$dirname}/{$filename}_files/resources/';
 
+	@$conf->plugins->px2dt->guieditor->custom_fields = array(
+		'css-margin'=>array(
+			'backend'=>array(
+				'class' => 'tomk79\\broccoliFieldLp\\fields\\cssMargin',
+				'file' => '../../../fields/cssMargin/backend.js',
+			),
+			'frontend'=>array(
+				'dir' => '../../../fields/cssMargin/frontend/',
+				'file' => array(
+					'frontend.js'
+				),
+				'function' => 'window.broccoliFieldLpCssMargin'
+			),
+		),
+		'css-padding'=>array(
+			'backend'=>array(
+				'class' => 'tomk79\\broccoliFieldLp\\fields\\cssPadding',
+				'file' => '../../../fields/cssPadding/backend.js',
+			),
+			'frontend'=>array(
+				'dir' => '../../../fields/cssPadding/frontend/',
+				'file' => array(
+					'frontend.js'
+				),
+				'function' => 'window.broccoliFieldLpCssPadding'
+			),
+		),
+	);
 
 	// -------- PHP Setting --------
 

@@ -8,15 +8,17 @@ var _tasks = [
 
 // src 中の *.js を処理
 gulp.task('carousel', function(){
-	gulp.src(["./src_gulp/interactives/carousel/module.js", "./node_modules/tiny-slider/dist/min/tiny-slider.js"])
+	gulp.src(["./src_gulp/fields/cssMargin/frontend.js"])
 		.pipe(plumber())
-		.pipe(concat('module.js'))
-		.pipe(gulp.dest( './modules/interactives/carousel/' ))
+		.pipe(browserify({}))
+		.pipe(concat('frontend.js'))
+		.pipe(gulp.dest( './fields/cssMargin/frontend/' ))
 	;
-	gulp.src(["./src_gulp/interactives/carousel/module.css.scss","./node_modules/tiny-slider/dist/tiny-slider.css"])
+	gulp.src(["./src_gulp/fields/cssPadding/frontend.js"])
 		.pipe(plumber())
-		.pipe(concat('module.css.scss'))
-		.pipe(gulp.dest( './modules/interactives/carousel/' ))
+		.pipe(browserify({}))
+		.pipe(concat('frontend.js'))
+		.pipe(gulp.dest( './fields/cssPadding/frontend/' ))
 	;
 });
 

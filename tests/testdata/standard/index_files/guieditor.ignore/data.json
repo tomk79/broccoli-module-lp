@@ -14,7 +14,7 @@
                                 "resType": "",
                                 "webUrl": ""
                             },
-                            "background-image-effect": "scroll-fixed",
+                            "background-image-effect": " px2-lp-container--bg-scroll-fixed",
                             "main": [
                                 {
                                     "modId": "std-document:utils/p",
@@ -38,7 +38,20 @@
                                     "anchor": "",
                                     "dec": ""
                                 }
-                            ]
+                            ],
+                            "min-height": "",
+                            "padding": {
+                                "top": "123px",
+                                "right": "auto",
+                                "bottom": "123px",
+                                "left": "auto"
+                            },
+                            "margin": {
+                                "top": "",
+                                "right": "",
+                                "bottom": "",
+                                "left": ""
+                            }
                         },
                         "anchor": "",
                         "dec": ""
@@ -53,7 +66,7 @@
                                 "resType": "",
                                 "webUrl": ""
                             },
-                            "background-image-effect": "scroll-fixed",
+                            "background-image-effect": "",
                             "main": [
                                 {
                                     "modId": "std-document:grids/grid",
@@ -149,7 +162,20 @@
                                     "anchor": "",
                                     "dec": ""
                                 }
-                            ]
+                            ],
+                            "min-height": "",
+                            "padding": {
+                                "top": "",
+                                "right": "",
+                                "bottom": "",
+                                "left": ""
+                            },
+                            "margin": {
+                                "top": "",
+                                "right": "",
+                                "bottom": "",
+                                "left": ""
+                            }
                         },
                         "anchor": "",
                         "dec": ""
