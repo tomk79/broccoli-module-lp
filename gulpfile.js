@@ -14,6 +14,11 @@ gulp.task('carousel', function(){
 		.pipe(concat('frontend.js'))
 		.pipe(gulp.dest( './fields/cssMarginPadding/frontend/' ))
 	;
+	gulp.src(["./src_gulp/fields/cssMarginPadding/frontend.css"])
+		.pipe(plumber())
+		.pipe(concat('frontend.css'))
+		.pipe(gulp.dest( './fields/cssMarginPadding/frontend/' ))
+	;
 });
 
 // src 中のすべての拡張子を監視して処理

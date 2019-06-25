@@ -41,14 +41,14 @@
                             ],
                             "min-height": "",
                             "margin-padding": {
-                                "marginTop": "",
-                                "marginRight": "",
-                                "marginBottom": "",
-                                "marginLeft": "",
-                                "paddingTop": "100px",
-                                "paddingRight": "",
-                                "paddingBottom": "",
-                                "paddingLeft": ""
+                                "marginTop": "100px",
+                                "marginRight": "auto",
+                                "marginBottom": "200px",
+                                "marginLeft": "auto",
+                                "paddingTop": "200px",
+                                "paddingRight": "2em",
+                                "paddingBottom": "400px",
+                                "paddingLeft": "1em"
                             }
                         },
                         "anchor": "",

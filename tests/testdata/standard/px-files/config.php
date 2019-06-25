@@ -390,11 +390,12 @@ return call_user_func( function(){
 		'css-margin-padding'=>array(
 			'backend'=>array(
 				'class' => 'tomk79\\broccoliFieldLp\\fields\\cssMarginPadding',
-				'file' => '../../../fields/cssMarginPadding/backend.js',
+				'require' => '../../../fields/cssMarginPadding/backend.js',
 			),
 			'frontend'=>array(
 				'dir' => '../../../fields/cssMarginPadding/frontend/',
 				'file' => array(
+					'frontend.css',
 					'frontend.js'
 				),
 				'function' => 'window.broccoliFieldLpCssMarginPadding'

@@ -11,11 +11,12 @@
         "type": "field",
         "backend": {
             "class": "tomk79\\broccoliFieldLp\\fields\\cssMarginPadding",
-            "file": "fields/cssMarginPadding/backend.js"
+            "require": "fields/cssMarginPadding/backend.js"
         },
         "frontend": {
             "dir": "fields/cssMarginPadding/frontend/",
             "file": [
+                "frontend.css",
                 "frontend.js"
             ],
             "function" : "window.broccoliFieldLpCssMarginPadding"
