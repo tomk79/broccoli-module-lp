@@ -1,4 +1,11 @@
 {&{"input":{
+	"type": "text",
+	"name": "text-color",
+	"label": "文字色",
+	"rows": 1,
+	"hidden": true
+}}&}
+{&{"input":{
 	"type": "html_attr_text",
 	"name": "background-color",
 	"label": "背景色",
@@ -18,7 +25,7 @@
 	"display":"select",
 	"options":[
 		{"value":"", "label":"なし"},
-		{"value":" px2-lp-container--bg-scroll-fixed", "label":"スクロールに対して固定"}
+		{"value":"scroll-fixed", "label":"スクロールに対して固定"}
 	],
 	"hidden": true
 }}&}
@@ -37,12 +44,57 @@
     "label":"ボックス内、ボックス外の隙間 (margin, padding)",
     "hidden":true
 }}&}
-<div class="px2-lp-container{&{"if":{"is_set":"background-image-effect"}}&}{&{"echo":{"ref":"background-image-effect"}}&}{&"endif"&}"{&{"if":{"cond":[
-	["is_set:min-height"],
-	["is_set:margin-padding"],
-	["is_set:background-image"]
-]}}&} style="{&{"echo":{"ref":"margin-padding"}}&}{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:{&{"echo":{"ref":"background-color"}}&};{&"endif"&}{&{"if":{"cond":[["is_set:min-height"]]}}&} min-height:{&{"echo":{"ref":"min-height"}}&};{&"endif"&}"{&"endif"&}>
-	<div class="px2-lp-container__inner">
+{&{"input":{
+    "type":"select",
+    "name":"fluid-innter",
+    "label":"コンテンツ領域幅",
+	"display":"radio",
+	"options":[
+		{"value":"", "label":"固定幅"},
+		{"value":"fluid", "label":"流動幅"}
+	],
+    "hidden":true
+}}&}
+<div class="px2-lp-container{&
+	{"if":{
+		"cond": [
+			["background-image-effect==scroll-fixed"]
+		]}}
+		&} px2-lp-container--bg-scroll-fixed{&
+	"endif"
+	&}"{&
+	{"if":{"cond":[
+		["is_set:text-color"],
+		["is_set:min-height"],
+		["is_set:margin-padding"],
+		["is_set:background-image"]
+	]}}&} style="{&
+		{"echo":{"ref":"margin-padding"}}
+	&}{&
+		{"if":{"is_set":"background-image"}}
+			&} background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&
+		"endif"
+	&}{&
+		{"if":{"is_set":"background-color"}}
+			&} background-color:{&{"echo":{"ref":"background-color"}}&};{&
+		"endif"
+	&}{&
+		{"if":{"cond":[["is_set:min-height"]]}}
+			&} min-height:{&{"echo":{"ref":"min-height"}}&};{&
+		"endif"
+	&}{&
+		{"if":{"cond":[["is_set:text-color"]]}}
+			&} color:{&{"echo":{"ref":"text-color"}}&};{&
+		"endif"
+	&}"{&
+	"endif"
+&}>
+	<div class="px2-lp-container__inner{&
+	{"if":{
+		"cond": [["is_set:fluid-innter"]]}}
+		&} px2-lp-container__inner--fluid{&
+	"endif"
+	&}">
 {&{"module":{"name":"main","label":"メインエリア"}}&}
 	</div>
 </div>

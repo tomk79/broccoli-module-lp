@@ -38,7 +38,9 @@
                                     "anchor": "",
                                     "dec": ""
                                 }
-                            ]
+                            ],
+                            "text-color": "",
+                            "fluid-innter": ""
                         },
                         "anchor": "",
                         "dec": ""
@@ -53,7 +55,7 @@
                                 "resType": "",
                                 "webUrl": ""
                             },
-                            "background-image-effect": " px2-lp-container--bg-scroll-fixed",
+                            "background-image-effect": "scroll-fixed",
                             "main": [
                                 {
                                     "modId": "std-document:utils/p",
@@ -88,7 +90,9 @@
                                 "paddingRight": "2em",
                                 "paddingBottom": "400px",
                                 "paddingLeft": "1em"
-                            }
+                            },
+                            "text-color": "#fff",
+                            "fluid-innter": ""
                         },
                         "anchor": "",
                         "dec": ""
@@ -210,7 +214,9 @@
                                 "paddingRight": "",
                                 "paddingBottom": "",
                                 "paddingLeft": ""
-                            }
+                            },
+                            "text-color": "#fff",
+                            "fluid-innter": "fluid"
                         },
                         "anchor": "",
                         "dec": ""
