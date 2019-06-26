@@ -37,9 +37,11 @@
     "label":"ボックス内、ボックス外の隙間 (margin, padding)",
     "hidden":true
 }}&}
-<div class="px2-lp-container{&{"if":{"is_set":"background-image-effect"}}&}{&{"echo":{"ref":"background-image-effect"}}&}{&"endif"&}"
- style="{&{"echo":{"ref":"margin-padding"}}&}{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:{&{"echo":{"ref":"background-color"}}&};{&"endif"&}{&{"if":{"cond":[["is_set:min-height"]]}}&}
- min-height:{&{"echo":{"ref":"min-height"}}&};{&"endif"&}">
+<div class="px2-lp-container{&{"if":{"is_set":"background-image-effect"}}&}{&{"echo":{"ref":"background-image-effect"}}&}{&"endif"&}"{&{"if":{"cond":[
+	["is_set:min-height"],
+	["is_set:margin-padding"],
+	["is_set:background-image"]
+]}}&} style="{&{"echo":{"ref":"margin-padding"}}&}{&{"if":{"is_set":"background-image"}}&}background-image:url(&quot;{&{"echo":{"ref":"background-image"}}&}&quot;);{&"endif"&} {&{"if":{"is_set":"background-color"}}&}background-color:{&{"echo":{"ref":"background-color"}}&};{&"endif"&}{&{"if":{"cond":[["is_set:min-height"]]}}&} min-height:{&{"echo":{"ref":"min-height"}}&};{&"endif"&}"{&"endif"&}>
 	<div class="px2-lp-container__inner">
 {&{"module":{"name":"main","label":"メインエリア"}}&}
 	</div>

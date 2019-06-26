@@ -9,6 +9,45 @@
                         "fields": {
                             "background-color": "",
                             "background-image": {
+                                "resKey": "e62a448aeec0358e1c2fd328b5a1aa2a",
+                                "path": "./index_files/resources/e62a448aeec0358e1c2fd328b5a1aa2a.txt",
+                                "resType": "none",
+                                "webUrl": ""
+                            },
+                            "background-image-effect": "",
+                            "min-height": "",
+                            "margin-padding": {
+                                "marginTop": "",
+                                "marginRight": "",
+                                "marginBottom": "",
+                                "marginLeft": "",
+                                "paddingTop": "",
+                                "paddingRight": "",
+                                "paddingBottom": "",
+                                "paddingLeft": ""
+                            },
+                            "main": [
+                                {
+                                    "modId": "std-document:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "## プレーン\n何も含んでいない、シンプルなコンテナ。\n",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    },
+                    {
+                        "modId": "pickles2:containers/container",
+                        "fields": {
+                            "background-color": "",
+                            "background-image": {
                                 "resKey": "395f47c16e488cb1e23768692fa86d41",
                                 "path": "./index_files/resources/photo001.jpg",
                                 "resType": "",
