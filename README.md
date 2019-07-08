@@ -1,5 +1,9 @@
 # Broccoli Module: Modules for Landing Pages
 
+### tomk79/broccoli-module-lp v0.0.2 (2019年7月9日)
+
+- `min-height`, `padding`, `margin`, 文字色, コンテンツ領域幅 を設定できるようになった。
+
 ### tomk79/broccoli-module-lp v0.0.1 (2019年5月12日)
 
 - Initial release.
