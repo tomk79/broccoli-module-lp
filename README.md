@@ -1,6 +1,6 @@
 # Broccoli Module: Modules for Landing Pages
 
-### tomk79/broccoli-module-lp v0.1.0 (リリース日未定)
+### tomk79/broccoli-module-lp v0.1.0 (2019年7月10日)
 
 - サムネイルとREADMEを更新。
 
