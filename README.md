@@ -1,5 +1,9 @@
 # Broccoli Module: Modules for Landing Pages
 
+### tomk79/broccoli-module-lp v0.1.1 (リリース日未定)
+
+- コンテナに背景色のみを指定したときに無効となる不具合を修正。
+
 ### tomk79/broccoli-module-lp v0.1.0 (2019年7月10日)
 
 - サムネイルとREADMEを更新。

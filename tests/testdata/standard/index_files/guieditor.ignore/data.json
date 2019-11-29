@@ -220,6 +220,58 @@
                         },
                         "anchor": "",
                         "dec": ""
+                    },
+                    {
+                        "modId": "pickles2:containers/container",
+                        "fields": {
+                            "text-color": "",
+                            "background-color": "#999",
+                            "background-image": {
+                                "resKey": "c35af9fb3baef3b22290fcdc38d5c93e",
+                                "path": "./index_files/resources/c35af9fb3baef3b22290fcdc38d5c93e.txt",
+                                "resType": "none",
+                                "webUrl": ""
+                            },
+                            "background-image-effect": "",
+                            "min-height": "",
+                            "margin-padding": {
+                                "marginTop": "",
+                                "marginRight": "",
+                                "marginBottom": "",
+                                "marginLeft": "",
+                                "paddingTop": "",
+                                "paddingRight": "",
+                                "paddingBottom": "",
+                                "paddingLeft": ""
+                            },
+                            "fluid-innter": "",
+                            "main": [
+                                {
+                                    "modId": "std-document:utils/p",
+                                    "fields": {
+                                        "paragraph": "",
+                                        "text-align": " px2-text-align-center",
+                                        "main": [
+                                            {
+                                                "modId": "std-document:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "中央に寄せられた背景がグレイのブロック。",
+                                                        "editor": "markdown"
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
                     }
                 ]
             },
