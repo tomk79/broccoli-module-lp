@@ -1,5 +1,9 @@
 # Broccoli Module: Modules for Landing Pages
 
+### tomk79/broccoli-module-lp v0.1.2 (リリース日未定)
+
+- モジュールの上端に、わずかにスペースを開けるようにしたことで、上へのドロップがしやすくなった。
+
 ### tomk79/broccoli-module-lp v0.1.1 (2019年12月13日)
 
 - コンテナに背景色のみを指定したときに無効となる不具合を修正。
