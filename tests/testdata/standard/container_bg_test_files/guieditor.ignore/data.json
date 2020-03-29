@@ -1,0 +1,52 @@
+{
+    "bowl": {
+        "main": {
+            "modId": "_sys/root",
+            "fields": {
+                "main": [
+                    {
+                        "modId": "pickles2:containers/container",
+                        "fields": {
+                            "text-color": "",
+                            "background-color": "",
+                            "background-image": {
+                                "resKey": "7b17aadd42505f37d00ee28ec1f82d93",
+                                "path": "./container_bg_test_files/resources/dummy_image.gif",
+                                "resType": "",
+                                "webUrl": ""
+                            },
+                            "background-image-effect": "",
+                            "min-height": "",
+                            "margin-padding": {
+                                "marginTop": "",
+                                "marginRight": "",
+                                "marginBottom": "",
+                                "marginLeft": "",
+                                "paddingTop": "",
+                                "paddingRight": "",
+                                "paddingBottom": "",
+                                "paddingLeft": ""
+                            },
+                            "fluid-innter": "",
+                            "main": [
+                                {
+                                    "modId": "std-document:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "コンテナの背景画像の配置テスト。\n",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
+                    }
+                ]
+            }
+        }
+    }
+}

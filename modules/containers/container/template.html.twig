@@ -1,0 +1,33 @@
+<div class="px2-lp-container{%
+	if attribute(_context, "background-image-effect") == "scroll-fixed"
+%} px2-lp-container--bg-scroll-fixed{%
+	endif
+%}"{%
+	if attribute(_context, "margin-padding")
+		or attribute(_context, "background-image")
+		or attribute(_context, "background-color")
+		or attribute(_context, "min-height")
+		or attribute(_context, "text-color")
+%} style="{{ attribute(_context, "margin-padding") }}{%
+	if attribute(_context, "background-image")
+		%} background-image:url(&quot;{{ attribute(_context, "background-image") }}&quot;);{%
+	endif
+%}{%
+	if attribute(_context, "background-color")
+		%} background-color: {{ attribute(_context, "background-color") }};{%
+	endif
+%}{%
+	if attribute(_context, "min-height")
+		%} min-height:{{ attribute(_context, "min-height") }};{%
+	endif
+%}{%
+	if attribute(_context, "text-color")
+		%} color:{{ attribute(_context, "text-color") }};{%
+	endif
+%}"{%
+	endif
+%}>{% if _ENV.mode == "canvas" %}<div style="height: 3px;"></div>{% endif %}
+	<div class="px2-lp-container__inner{% if attribute(_context, "fluid-innter") %} px2-lp-container__inner--fluid{% endif %}">
+{{ main }}
+	</div>
+</div>
