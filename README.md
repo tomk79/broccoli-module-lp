@@ -1,6 +1,6 @@
 # Broccoli Module: Modules for Landing Pages
 
-### tomk79/broccoli-module-lp v0.1.2 (リリース日未定)
+### tomk79/broccoli-module-lp v0.1.2 (2020年4月4日)
 
 - モジュールの上端に、わずかにスペースを開けるようにしたことで、上へのドロップがしやすくなった。
 
