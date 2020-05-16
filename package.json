@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.2",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",
