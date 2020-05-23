@@ -272,6 +272,170 @@
                         },
                         "anchor": "",
                         "dec": ""
+                    },
+                    {
+                        "modId": "pickles2:containers/container",
+                        "fields": {
+                            "text-color": "",
+                            "background-color": "#f6f6f6",
+                            "background-image": {
+                                "resKey": "b69847bb128807304b59208a926bbf00",
+                                "path": "./index_files/resources/b69847bb128807304b59208a926bbf00.txt",
+                                "resType": "none",
+                                "webUrl": ""
+                            },
+                            "background-image-effect": "",
+                            "min-height": "",
+                            "margin-padding": {
+                                "marginTop": "",
+                                "marginRight": "",
+                                "marginBottom": "",
+                                "marginLeft": "",
+                                "paddingTop": "",
+                                "paddingRight": "",
+                                "paddingBottom": "",
+                                "paddingLeft": ""
+                            },
+                            "fluid-innter": "",
+                            "main": [
+                                {
+                                    "modId": "std-document:basics/text",
+                                    "fields": {
+                                        "main": {
+                                            "src": "## コンテナをネストする\n\n入れ子にされたコンテナは親要素にフィットします。\n",
+                                            "editor": "markdown"
+                                        }
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                },
+                                {
+                                    "modId": "pickles2:containers/container",
+                                    "fields": {
+                                        "text-color": "",
+                                        "background-color": "#fff",
+                                        "background-image": {
+                                            "resKey": "e477ed9d4138b5dddeb9cd9c7677d866",
+                                            "path": "./index_files/resources/e477ed9d4138b5dddeb9cd9c7677d866.txt",
+                                            "resType": "",
+                                            "webUrl": ""
+                                        },
+                                        "background-image-effect": "",
+                                        "min-height": "",
+                                        "margin-padding": {
+                                            "marginTop": "",
+                                            "marginRight": "",
+                                            "marginBottom": "",
+                                            "marginLeft": "",
+                                            "paddingTop": "",
+                                            "paddingRight": "",
+                                            "paddingBottom": "",
+                                            "paddingLeft": ""
+                                        },
+                                        "fluid-innter": "",
+                                        "main": [
+                                            {
+                                                "modId": "std-document:basics/text",
+                                                "fields": {
+                                                    "main": {
+                                                        "src": "### コンテナをネストする\n\n入れ子にされたコンテナは親要素にフィットします。\n",
+                                                        "editor": "markdown"
+                                                    }
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            },
+                                            {
+                                                "modId": "pickles2:containers/container",
+                                                "fields": {
+                                                    "text-color": "",
+                                                    "background-color": "#f6f6f6",
+                                                    "background-image": {
+                                                        "resKey": "517bd3c92585291f24a8aa852fa9ddd4",
+                                                        "path": "./index_files/resources/517bd3c92585291f24a8aa852fa9ddd4.txt",
+                                                        "resType": "",
+                                                        "webUrl": ""
+                                                    },
+                                                    "background-image-effect": "",
+                                                    "min-height": "",
+                                                    "margin-padding": {
+                                                        "marginTop": "",
+                                                        "marginRight": "",
+                                                        "marginBottom": "",
+                                                        "marginLeft": "",
+                                                        "paddingTop": "",
+                                                        "paddingRight": "",
+                                                        "paddingBottom": "",
+                                                        "paddingLeft": ""
+                                                    },
+                                                    "fluid-innter": "",
+                                                    "main": [
+                                                        {
+                                                            "modId": "std-document:basics/text",
+                                                            "fields": {
+                                                                "main": {
+                                                                    "src": "#### コンテナをネストする\n\n入れ子にされたコンテナは親要素にフィットします。\n",
+                                                                    "editor": "markdown"
+                                                                }
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        },
+                                                        {
+                                                            "modId": "pickles2:containers/container",
+                                                            "fields": {
+                                                                "text-color": "",
+                                                                "background-color": "#fff",
+                                                                "background-image": {
+                                                                    "resKey": "ebb74b6259e9adb4d33f3d7c3782cdd9",
+                                                                    "path": "./index_files/resources/ebb74b6259e9adb4d33f3d7c3782cdd9.txt",
+                                                                    "resType": "",
+                                                                    "webUrl": ""
+                                                                },
+                                                                "background-image-effect": "",
+                                                                "min-height": "",
+                                                                "margin-padding": {
+                                                                    "marginTop": "",
+                                                                    "marginRight": "",
+                                                                    "marginBottom": "",
+                                                                    "marginLeft": "",
+                                                                    "paddingTop": "",
+                                                                    "paddingRight": "",
+                                                                    "paddingBottom": "",
+                                                                    "paddingLeft": ""
+                                                                },
+                                                                "fluid-innter": "",
+                                                                "main": [
+                                                                    {
+                                                                        "modId": "std-document:basics/text",
+                                                                        "fields": {
+                                                                            "main": {
+                                                                                "src": "##### コンテナをネストする\n\n入れ子にされたコンテナは親要素にフィットします。\n",
+                                                                                "editor": "markdown"
+                                                                            }
+                                                                        },
+                                                                        "anchor": "",
+                                                                        "dec": ""
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "anchor": "",
+                                                            "dec": ""
+                                                        }
+                                                    ]
+                                                },
+                                                "anchor": "",
+                                                "dec": ""
+                                            }
+                                        ]
+                                    },
+                                    "anchor": "",
+                                    "dec": ""
+                                }
+                            ]
+                        },
+                        "anchor": "",
+                        "dec": ""
                     }
                 ]
             },
