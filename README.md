@@ -1,6 +1,6 @@
 # Broccoli Module: Modules for Landing Pages
 
-### tomk79/broccoli-module-lp v0.1.3 (リリース日未定)
+### tomk79/broccoli-module-lp v0.1.3 (2020年6月7日)
 
 - コンテナの幅と再帰的ネストに関する微調整。
 
